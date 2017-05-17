@@ -1,0 +1,53 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.red {
+  width: 100%;
+  background-color: red;
+  height: 15%;
+  min-height: 60px;
+}
+
+.red,
+.container {
+  min-width: 400px;
+}
+
+.container {
+  height: 85%;
+}
+
+.yellow, .green {
+  display: inline-block;
+  float: left;
+  height: 100%;
+}
+
+.yellow {
+  width: 15%;
+  background-color: yellow;
+}
+
+.green {
+  width: 70%;
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+  height: 90%;
+}
+
+@media all and (max-width: 600px) {
+  .green {
+    width: 100%;
+  }
+  
+  .yellow {
+    display: none;
+  }
+}
